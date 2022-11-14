@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Law Partners</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <!-- Шапка -->
+    <header class="header">
+      <nav class="header__nav">
+        <a href="./index.html" class="logo link">Law Partners</a>
+        <ul class="menu list">
+          <li class="menu__item">
+            <a href="#" class="menu__link link">Услуги компании</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link link">Команда</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Герой -->
+    <main>
+      <div class="hero">
+        <div class="hero__block">
+          <h1 class="hero__title">Обманул брокер?</h1>
+          <p class="hero__sub-title">
+            Поможем вернуть средства без предоплаты за 11 дней!
+          </p>
+          <p class="hero__text">*Работаем с суммой от 1500 евро!</p>
+        </div>
+        <div class="hero__form">
+          <form class="form">
+            <p class="form__title">Оставьте заявку!</p>
+            <p class="form__sub-title">И получите бесплатную консультацию</p>
+            <label for="user-name" class="form__label"></label>
+            <input
+              type="text"
+              name="user-name"
+              id="user-name"
+              class="form__input"
+              placeholder="Ваше имя"
+              required
+            />
+            <label for="user-tel" class="form__label"></label>
+            <input
+              type="tel"
+              name="user-tel"
+              id="user-tel"
+              class="form__input"
+              placeholder="Телефон"
+              required
+            />
+            <label for="user-email" class="form__label"></label>
+            <input
+              type="email"
+              name="user-email"
+              id="user-email"
+              class="form__input"
+              placeholder="Ваш email"
+              required
+            />
+            <button type="submit" class="form__button">Получить помощь</button>
+            <label class="pivacy-policy"
+              ><input
+                type="checkbox"
+                name="privacy"
+                value="privacy"
+                class="pivacy-policy__check"
+              />
+              <span class="pivacy-policy__text">Я принимаю условия</span>
+              <a href="" class="pivacy-policy__link link"
+                >Политики конфиденциальности</a
+              ></label
+            >
+          </form>
+        </div>
+      </div>
+      <!-- Услуги компании -->
+      <section class="services">
+        <div class="services__bg">
+          <div class="container">
+            <h2 class="section-title">Услуги компании</h2>
+            <ul class="services__list list">
+              <li class="services__item">
+                <img
+                  src="./img/forex.png"
+                  alt="Forex"
+                  class="services__img"
+                  width="250"
+                  height="250"
+                />
+                <div class="services__block">
+                  <h3 class="services__title">Форекс мошенники</h3>
+                  <p class="services__text">
+                    Возврат средств от инвестицонных компаний, а так же биржевых
+                    и форекс брокеров.
+                  </p>
+                  <div class="services__btn">
+                    <button type="button" class="button">Узнать больше</button>
+                  </div>
+                </div>
+              </li>
+              <li class="services__item">
+                <img
+                  src="./img/anydesk.png"
+                  alt="Any Desk"
+                  class="services__img"
+                  width="250"
+                  height="250"
+                />
+                <div class="services__block">
+                  <h3 class="services__title">Any desk и Team Viewer</h3>
+                  <p class="services__text">
+                    Поможем вам если деньги были украденны с помощью програмного
+                    обеспечения для удаленного рабочего места.
+                  </p>
+                  <div class="services__btn">
+                    <button type="button" class="button">Узнать больше</button>
+                  </div>
+                </div>
+              </li>
+              <li class="services__item">
+                <img
+                  src="./img/bitcoin.png"
+                  alt="Bitcoin"
+                  class="services__img"
+                  width="250"
+                  height="250"
+                />
+                <div class="services__block">
+                  <h3 class="services__title">Bitcoin и Blockhain аферы</h3>
+                  <p class="services__text">
+                    Поиск украденой криптовалюты, разблокировка крипто счетов и
+                    запрос на компансацию токенов.
+                  </p>
+                  <div class="services__btn">
+                    <button type="button" class="button">Узнать больше</button>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- Команда -->
+      <section class="team">
+        <div class="container">
+          <h2 class="section-title">Команда</h2>
+          <ul class="team__list list">
+            <li class="team__item">
+              <div class="team__block">
+                <img
+                  src="./img/victoria.jpg"
+                  alt="Vitoria Rossi"
+                  class="team__img"
+                  width="382"
+                  height="407"
+                />
+                <div class="team__content">
+                  <h3 class="team__name">Vitoria Rossi</h3>
+                  <p class="team__text">
+                    Адвокат уголовного права, специалист платежних систем и
+                    международных переводов, эксперт банковского сектора.
+                  </p>
+                  <button type="button" class="button">Задать вопрос</button>
+                </div>
+              </div>
+            </li>
+            <li class="team__item">
+              <div class="team__block">
+                <img
+                  src="./img/oscar.jpg"
+                  alt="Oskars Petrauskas"
+                  class="team__img"
+                  width="382"
+                  height="407"
+                />
+                <div class="team__content">
+                  <h3 class="team__name">Oskars Petrauskas</h3>
+                  <p class="team__text">
+                    Юрист высшей категории. Специалист Blockchain технологий.
+                    Эксперт криптовалютного рынка.
+                  </p>
+                  <button type="button" class="button">Задать вопрос</button>
+                </div>
+              </div>
+            </li>
+            <li class="team__item">
+              <div class="team__block">
+                <img
+                  src="./img/kazimir.jpg"
+                  alt="Kazimir Javantovichi "
+                  class="team__img"
+                  width="382"
+                  height="407"
+                />
+                <div class="team__content">
+                  <h3 class="team__name">Kazimir Javantovichi</h3>
+                  <p class="team__text">
+                    Следователь Европейской биржевой комиссии. Юрист
+                    международного уголовного права.
+                  </p>
+                  <button type="button" class="button">Задать вопрос</button>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <!-- Футтер -->
+    <footer class="footer">
+      <div class="container">
+        <div class="foooter__wrap">
+          <div class="footer__block">
+            <a href="./index.html" class="footer__logo link">Law Partners</a>
+            <address class="footer__addres">
+              <ul class="footer__nav list">
+                <li class="footer__contact">
+                  <a
+                    href="mailto:supprot@lawpartners.com"
+                    class="footer__link link"
+                    ><svg class="footer__icon" white="25" height="17">
+                      <use href="./img/sprite.svg#icon-envelope"></use>
+                    </svg>
+                    supprot@lawpartners.com</a
+                  >
+                </li>
+                <li class="footer__contact">
+                  <a href="tel:+467989832323" class="footer__link link"
+                    ><svg class="footer__icon" white="35" height="25">
+                      <use href="./img/sprite.svg#icon-mobile"></use></svg
+                    >+46 798 983-23-23</a
+                  >
+                </li>
+                <li class="footer__contact">
+                  <a
+                    href="https://goo.gl/maps/2SC99oraRXqo9TvR9"
+                    class="footer__link link"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    ><svg class="footer__icon" white="35" height="25">
+                      <use href="./img/sprite.svg#icon-location"></use></svg
+                    >Business Garden Bucharest Calea Plevnei 159, București
+                    060013</a
+                  >
+                </li>
+              </ul>
+            </address>
+            <p class="footer__copyright">&#169; 2015-2022</p>
+          </div>
+          <!-- <div class="footer__img"></div> -->
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
