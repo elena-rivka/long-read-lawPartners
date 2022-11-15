@@ -49,33 +49,39 @@
           <form class="form">
             <p class="form__title">Оставьте заявку!</p>
             <p class="form__sub-title">И получите бесплатную консультацию</p>
-            <label for="user-name" class="form__label"></label>
-            <input
-              type="text"
-              name="user-name"
-              id="user-name"
-              class="form__input"
-              placeholder="Ваше имя"
-              required
-            />
-            <label for="user-tel" class="form__label"></label>
-            <input
-              type="tel"
-              name="user-tel"
-              id="user-tel"
-              class="form__input"
-              placeholder="Телефон"
-              required
-            />
-            <label for="user-email" class="form__label"></label>
-            <input
-              type="email"
-              name="user-email"
-              id="user-email"
-              class="form__input"
-              placeholder="Ваш email"
-              required
-            />
+            <div class="form__field">
+              <input
+                type="text"
+                name="user-name"
+                id="user-name"
+                class="form__input"
+                placeholder=" "
+                required
+              />
+              <label for="user-name" class="form__label">Ваше имя</label>
+            </div>
+            <div class="form__field">
+              <input
+                type="tel"
+                name="user-tel"
+                id="user-tel"
+                class="form__input"
+                placeholder=" "
+                required
+              />
+              <label for="user-tel" class="form__label">Телефон</label>
+            </div>
+            <div class="form__field">
+              <input
+                type="email"
+                name="user-email"
+                id="user-email"
+                class="form__input"
+                placeholder=" "
+                required
+              />
+              <label for="user-email" class="form__label">Ваш e-mail</label>
+            </div>
             <button type="submit" class="form__button">Получить помощь</button>
             <label class="pivacy-policy"
               ><input
@@ -132,7 +138,9 @@
                     обеспечения для удаленного рабочего места.
                   </p>
                   <div class="services__btn">
-                    <button type="button" class="button">Узнать больше</button>
+                    <button type="button" class="button" data-modal-open>
+                      Узнать больше
+                    </button>
                   </div>
                 </div>
               </li>
@@ -151,7 +159,9 @@
                     запрос на компансацию токенов.
                   </p>
                   <div class="services__btn">
-                    <button type="button" class="button">Узнать больше</button>
+                    <button type="button" class="button" data-modal-open>
+                      Узнать больше
+                    </button>
                   </div>
                 </div>
               </li>
@@ -266,9 +276,16 @@
             </address>
             <p class="footer__copyright">&#169; 2015-2022</p>
           </div>
-          <!-- <div class="footer__img"></div> -->
         </div>
       </div>
     </footer>
+    <!-- Модальное окно -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal__close" data-modal-close>закрыть</button>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
