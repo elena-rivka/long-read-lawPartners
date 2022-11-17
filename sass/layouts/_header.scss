@@ -1,0 +1,48 @@
+.header {
+    padding-top: 29px;
+    padding-bottom: 29px;
+}
+
+.logo {
+    display: block;
+    text-align: center;
+
+    font-family: "Raleway";
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+
+    color: var(--color-title);
+}
+
+.header__nav {
+    position: relative;
+}
+
+.menu {
+    display: flex;
+    gap: 300px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.menu__link {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+
+    margin-right: 60px;
+
+    color: var(--color-text);
+    transition: color var(--anim-trans);
+
+        &:hover,
+        &:focus {
+            color: var(--color-btn);
+        }
+}

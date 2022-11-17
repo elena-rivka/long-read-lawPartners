@@ -1,0 +1,22 @@
+.button {
+    background: var(--color-btn);
+    border-radius: 25px;
+    padding: 15px 45px;
+    border-color: transparent;
+
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+
+    line-height: 1.14;
+    letter-spacing: 0.06em;
+
+    color: #ffffff;
+
+    transition: background-color var(--anim-trans);
+
+        &:hover,
+        &:focus {
+            background-color: var(--color-btn-hov);
+        }
+}
