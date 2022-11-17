@@ -57,6 +57,10 @@ body {
   line-height: 1.7;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .container {
   margin: 0 auto;
   width: 1236px;
@@ -331,8 +335,8 @@ body {
 
 .services__text {
   font-weight: 400;
-  font-size: 22px;
-  line-height: 26px;
+  font-size: 20px;
+  line-height: 1.7;
 
   color: var(--color-text);
 
@@ -403,8 +407,8 @@ body {
 
 .team__text {
   font-weight: 400;
-  font-size: 22px;
-  line-height: 26px;
+  font-size: 20px;
+  line-height: 1.4;
 
   margin-bottom: 20px;
 }
@@ -488,7 +492,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .backdrop.is-hidden {
@@ -504,7 +508,7 @@ body {
   transform: translate(-50%, -50%);
 
   width: 528px;
-  height: 581px;
+  height: 600px;
   padding: 40px;
 
   background-color: #fff;
@@ -518,4 +522,58 @@ body {
 
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0);
+}
+
+.modal-coment {
+  height: 722px;
+}
+
+.modal__close {
+  width: 30px;
+  height: 30px;
+  background-color: var(--color-white);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  fill: #000;
+  transition: fill var(--anim-trans), border-color var(--anim-trans);
+}
+
+.modal__close:hover,
+.modal__close:focus {
+  fill: var(--color-btn-hov);
+  border-color: var(--color-btn-hov);
+}
+
+.modal__icon {
+  width: 18px;
+  height: 18px;
+}
+
+.modal__input {
+  height: 60px;
+}
+
+.form__input--textarea {
+  resize: none;
+  height: 88px;
+  padding-top: 15px;
+}
+
+.form__input--textarea:focus + .modal__label--coment,
+.form__input--textarea:not(:placeholder-shown) + .modal__label--coment {
+  color: var(--color-btn);
+  transform: translateY(-60px);
+}
+
+.modal__label--coment {
+  position: absolute;
+  top: 25%;
+  left: 30px;
+  transform: translateY(-65%);
 }

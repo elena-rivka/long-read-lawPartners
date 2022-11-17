@@ -27,10 +27,10 @@
         <a href="./index.html" class="logo link">Law Partners</a>
         <ul class="menu list">
           <li class="menu__item">
-            <a href="#" class="menu__link link">Услуги компании</a>
+            <a href="#services" class="menu__link link">Услуги компании</a>
           </li>
           <li class="menu__item">
-            <a href="#" class="menu__link link">Команда</a>
+            <a href="#team" class="menu__link link">Команда</a>
           </li>
         </ul>
       </nav>
@@ -102,7 +102,9 @@
       <section class="services">
         <div class="services__bg">
           <div class="container">
-            <h2 class="section-title">Услуги компании</h2>
+            <a name="services"
+              ><h2 class="section-title">Услуги компании</h2></a
+            >
             <ul class="services__list list">
               <li class="services__item">
                 <img
@@ -174,7 +176,7 @@
       <!-- Команда -->
       <section class="team">
         <div class="container">
-          <h2 class="section-title">Команда</h2>
+          <a name="team"><h2 class="section-title">Команда</h2></a>
           <ul class="team__list list">
             <li class="team__item">
               <div class="team__block">
@@ -186,12 +188,14 @@
                   height="407"
                 />
                 <div class="team__content">
-                  <h3 class="team__name">Vitoria Rossi</h3>
+                  <h3 class="team__name">Victoria Rossi</h3>
                   <p class="team__text">
                     Адвокат уголовного права, специалист платежних систем и
                     международных переводов, эксперт банковского сектора.
                   </p>
-                  <button type="button" class="button">Задать вопрос</button>
+                  <button type="button" class="button" data-modal-open-vitoria>
+                    Задать вопрос
+                  </button>
                 </div>
               </div>
             </li>
@@ -210,7 +214,7 @@
                     Юрист высшей категории. Специалист Blockchain технологий.
                     Эксперт криптовалютного рынка.
                   </p>
-                  <button type="button" class="button" data-modal-open>
+                  <button type="button" class="button" data-modal-open-oskars>
                     Задать вопрос
                   </button>
                 </div>
@@ -231,7 +235,7 @@
                     Следователь Европейской биржевой комиссии. Юрист
                     международного уголовного права.
                   </p>
-                  <button type="button" class="button" data-modal-open>
+                  <button type="button" class="button" data-modal-open-kazimir>
                     Задать вопрос
                   </button>
                 </div>
@@ -288,19 +292,404 @@
     <!-- Модальное окно -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button class="modal__close" data-modal-close>закрыть</button>
+        <button class="modal__close" data-modal-close>
+          <svg class="modal__icon" white="18" height="18">
+            <use href="./img/sprite.svg#icon-close-black"></use>
+          </svg>
+        </button>
+        <form class="form">
+          <p class="form__title">Оставьте заявку!</p>
+          <p class="form__sub-title">И получите бесплатную консультацию</p>
+          <div class="form__field">
+            <input
+              type="text"
+              name="user-name"
+              id="user-name"
+              class="modal__input form__input"
+              placeholder=" "
+              required
+            />
+            <label for="user-name" class="form__label">Ваше имя</label>
+          </div>
+          <div class="form__field">
+            <input
+              type="tel"
+              name="user-tel"
+              id="user-tel"
+              class="modal__input form__input"
+              placeholder=" "
+              required
+            />
+            <label for="user-tel" class="form__label">Телефон</label>
+          </div>
+          <div class="form__field">
+            <input
+              type="email"
+              name="user-email"
+              id="user-email"
+              class="modal__input form__input"
+              placeholder=" "
+              required
+            />
+            <label for="user-email" class="form__label">Ваш e-mail</label>
+          </div>
+          <button type="submit" class="form__button">Получить помощь</button>
+          <label class="pivacy-policy"
+            ><input
+              type="checkbox"
+              name="privacy"
+              value="privacy"
+              class="pivacy-policy__check"
+            />
+            <span class="pivacy-policy__text">Я принимаю условия</span>
+            <a href="" class="pivacy-policy__link link"
+              >Политики конфиденциальности</a
+            ></label
+          >
+        </form>
       </div>
     </div>
 
     <div class="backdrop is-hidden" data-modal-1>
       <div class="modal">
-        <button class="modal__close" data-modal-close-1>закрыть</button>
+        <button class="modal__close" data-modal-close-1>
+          <svg class="modal__icon" white="18" height="18">
+            <use href="./img/sprite.svg#icon-close-black"></use>
+          </svg>
+        </button>
+        <form class="form">
+          <p class="form__title">Оставьте заявку!</p>
+          <p class="form__sub-title">И получите бесплатную консультацию</p>
+          <div class="form__field">
+            <input
+              type="text"
+              name="user-name"
+              id="user-name"
+              class="modal__input form__input"
+              placeholder=" "
+              required
+            />
+            <label for="user-name" class="form__label">Ваше имя</label>
+          </div>
+          <div class="form__field">
+            <input
+              type="tel"
+              name="user-tel"
+              id="user-tel"
+              class="modal__input form__input"
+              placeholder=" "
+              required
+            />
+            <label for="user-tel" class="form__label">Телефон</label>
+          </div>
+          <div class="form__field">
+            <input
+              type="email"
+              name="user-email"
+              id="user-email"
+              class="modal__input form__input"
+              placeholder=" "
+              required
+            />
+            <label for="user-email" class="form__label">Ваш e-mail</label>
+          </div>
+          <button type="submit" class="form__button">Получить помощь</button>
+          <label class="pivacy-policy"
+            ><input
+              type="checkbox"
+              name="privacy"
+              value="privacy"
+              class="pivacy-policy__check"
+            />
+            <span class="pivacy-policy__text">Я принимаю условия</span>
+            <a href="" class="pivacy-policy__link link"
+              >Политики конфиденциальности</a
+            ></label
+          >
+        </form>
       </div>
     </div>
 
     <div class="backdrop is-hidden" data-modal-2>
       <div class="modal">
-        <button class="modal__close" data-modal-close-2>закрыть</button>
+        <button class="modal__close" data-modal-close-2>
+          <svg class="modal__icon" white="18" height="18">
+            <use href="./img/sprite.svg#icon-close-black"></use>
+          </svg>
+        </button>
+        <form class="form">
+          <p class="form__title">Оставьте заявку!</p>
+          <p class="form__sub-title">И получите бесплатную консультацию</p>
+          <div class="form__field">
+            <input
+              type="text"
+              name="user-name"
+              id="user-name"
+              class="modal__input form__input"
+              placeholder=" "
+              required
+            />
+            <label for="user-name" class="form__label">Ваше имя</label>
+          </div>
+          <div class="form__field">
+            <input
+              type="tel"
+              name="user-tel"
+              id="user-tel"
+              class="modal__input form__input"
+              placeholder=" "
+              required
+            />
+            <label for="user-tel" class="form__label">Телефон</label>
+          </div>
+          <div class="form__field">
+            <input
+              type="email"
+              name="user-email"
+              id="user-email"
+              class="modal__input form__input"
+              placeholder=" "
+              required
+            />
+            <label for="user-email" class="form__label">Ваш e-mail</label>
+          </div>
+          <button type="submit" class="form__button">Получить помощь</button>
+          <label class="pivacy-policy"
+            ><input
+              type="checkbox"
+              name="privacy"
+              value="privacy"
+              class="pivacy-policy__check"
+            />
+            <span class="pivacy-policy__text">Я принимаю условия</span>
+            <a href="" class="pivacy-policy__link link"
+              >Политики конфиденциальности</a
+            ></label
+          >
+        </form>
+      </div>
+    </div>
+
+    <div class="backdrop is-hidden" data-modal-vitoria>
+      <div class="modal modal-coment">
+        <button class="modal__close" data-modal-close-vitoria>
+          <svg class="modal__icon" white="18" height="18">
+            <use href="./img/sprite.svg#icon-close-black"></use>
+          </svg>
+        </button>
+        <form class="form">
+          <p class="form__title">Оставьте заявку!</p>
+          <p class="form__sub-title">И получите бесплатную консультацию</p>
+          <div class="form__field">
+            <input
+              type="text"
+              name="user-name"
+              id="victoria-name"
+              class="modal__input form__input"
+              placeholder=" "
+              required
+            />
+            <label for="victoria-name" class="form__label">Ваше имя</label>
+          </div>
+          <div class="form__field">
+            <input
+              type="tel"
+              name="user-tel"
+              id="victoria-tel"
+              class="modal__input form__input"
+              placeholder=" "
+              required
+            />
+            <label for="victoria-tel" class="form__label">Телефон</label>
+          </div>
+          <div class="form__field">
+            <input
+              type="email"
+              name="user-email"
+              id="victoria-email"
+              class="modal__input form__input"
+              placeholder=" "
+              required
+            />
+            <label for="victoria-email" class="form__label">Ваш e-mail</label>
+          </div>
+
+          <div class="form__field">
+            <textarea
+              name="user-comment"
+              id="victoria-comment"
+              class="form__input form__input--textarea"
+              placeholder=" "
+            ></textarea>
+            <label
+              for="victoria-comment"
+              class="form__label modal__label--coment"
+              >Опишите вашу ситуацию</label
+            >
+          </div>
+
+          <button type="submit" class="form__button">Получить помощь</button>
+          <label class="pivacy-policy"
+            ><input
+              type="checkbox"
+              name="privacy"
+              value="privacy"
+              class="pivacy-policy__check"
+            />
+            <span class="pivacy-policy__text">Я принимаю условия</span>
+            <a href="" class="pivacy-policy__link link"
+              >Политики конфиденциальности</a
+            ></label
+          >
+        </form>
+      </div>
+    </div>
+
+    <div class="backdrop is-hidden" data-modal-oskars>
+      <div class="modal modal-coment">
+        <button class="modal__close" data-modal-close-oskars>
+          <svg class="modal__icon" white="18" height="18">
+            <use href="./img/sprite.svg#icon-close-black"></use>
+          </svg>
+        </button>
+        <form class="form">
+          <p class="form__title">Оставьте заявку!</p>
+          <p class="form__sub-title">И получите бесплатную консультацию</p>
+          <div class="form__field">
+            <input
+              type="text"
+              name="user-name"
+              id="oskars-name"
+              class="modal__input form__input"
+              placeholder=" "
+              required
+            />
+            <label for="oskars-name" class="form__label">Ваше имя</label>
+          </div>
+          <div class="form__field">
+            <input
+              type="tel"
+              name="user-tel"
+              id="oskars-tel"
+              class="modal__input form__input"
+              placeholder=" "
+              required
+            />
+            <label for="oskars-tel" class="form__label">Телефон</label>
+          </div>
+          <div class="form__field">
+            <input
+              type="email"
+              name="user-email"
+              id="oskars-email"
+              class="modal__input form__input"
+              placeholder=" "
+              required
+            />
+            <label for="oskars-email" class="form__label">Ваш e-mail</label>
+          </div>
+
+          <div class="form__field">
+            <textarea
+              name="user-comment"
+              id="oskars-comment"
+              class="form__input form__input--textarea"
+              placeholder=" "
+            ></textarea>
+            <label for="oskars-comment" class="form__label modal__label--coment"
+              >Опишите вашу ситуацию</label
+            >
+          </div>
+
+          <button type="submit" class="form__button">Получить помощь</button>
+          <label class="pivacy-policy"
+            ><input
+              type="checkbox"
+              name="privacy"
+              value="privacy"
+              class="pivacy-policy__check"
+            />
+            <span class="pivacy-policy__text">Я принимаю условия</span>
+            <a href="" class="pivacy-policy__link link"
+              >Политики конфиденциальности</a
+            ></label
+          >
+        </form>
+      </div>
+    </div>
+
+    <div class="backdrop is-hidden" data-modal-kazimir>
+      <div class="modal modal-coment">
+        <button class="modal__close" data-modal-close-kazimir>
+          <svg class="modal__icon" white="18" height="18">
+            <use href="./img/sprite.svg#icon-close-black"></use>
+          </svg>
+        </button>
+        <form class="form">
+          <p class="form__title">Оставьте заявку!</p>
+          <p class="form__sub-title">И получите бесплатную консультацию</p>
+          <div class="form__field">
+            <input
+              type="text"
+              name="user-name"
+              id="kazimir-name"
+              class="modal__input form__input"
+              placeholder=" "
+              required
+            />
+            <label for="kazimir-name" class="form__label">Ваше имя</label>
+          </div>
+          <div class="form__field">
+            <input
+              type="tel"
+              name="user-tel"
+              id="kazimir-tel"
+              class="modal__input form__input"
+              placeholder=" "
+              required
+            />
+            <label for="kazimir-tel" class="form__label">Телефон</label>
+          </div>
+          <div class="form__field">
+            <input
+              type="email"
+              name="user-email"
+              id="kazimir-email"
+              class="modal__input form__input"
+              placeholder=" "
+              required
+            />
+            <label for="kazimir-email" class="form__label">Ваш e-mail</label>
+          </div>
+
+          <div class="form__field">
+            <textarea
+              name="user-comment"
+              id="kazimir-comment"
+              class="form__input form__input--textarea"
+              placeholder=" "
+            ></textarea>
+            <label
+              for="kazimir-comment"
+              class="form__label modal__label--coment"
+              >Опишите вашу ситуацию</label
+            >
+          </div>
+
+          <button type="submit" class="form__button">Получить помощь</button>
+          <label class="pivacy-policy"
+            ><input
+              type="checkbox"
+              name="privacy"
+              value="privacy"
+              class="pivacy-policy__check"
+            />
+            <span class="pivacy-policy__text">Я принимаю условия</span>
+            <a href="" class="pivacy-policy__link link"
+              >Политики конфиденциальности</a
+            ></label
+          >
+        </form>
       </div>
     </div>
 
