@@ -493,6 +493,8 @@ html {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.4);
+
+  transition: opacity var(--anim-trans), visibility var(--anim-trans);
 }
 
 .backdrop.is-hidden {
@@ -517,7 +519,7 @@ html {
     0px 2px 1px rgba(0, 0, 0, 0.2);
 
   transform: translate(-50%, -50%) scale(1);
-  transition: transform $anim-trans;
+  transition: transform var(--anim-trans);
 }
 
 .backdrop.is-hidden .modal {
