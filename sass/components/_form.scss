@@ -1,12 +1,9 @@
 .hero__form {
-    // width: 500px;
-    // height: 655px;
     background: var(--color-white);
-    // box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.25);
     filter: drop-shadow(1px 1px 20px rgba(106, 106, 106, 0.78));
     border-radius: 10px;
 
-    // padding: 50px;
     padding: 20px;
     margin-top: 30px;
 
@@ -28,14 +25,12 @@
     font-family: "Roboto";
     font-style: normal;
     font-weight: 700;
-    // font-size: 26px;
     font-size: 20px;
     line-height: 1.19;
     text-align: center;
 
     color: var(--color-btn);
 
-    // margin-bottom: 20px;
     margin-bottom: 15px;
 
     @include  desktop {
@@ -46,15 +41,12 @@
 
 .form__sub-title {
     font-style: normal;
-    // font-weight: 500;
-    // font-size: 20px;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.4;
 
     text-align: center;
 
-    // margin-bottom: 42px;
     margin-bottom: 30px;
 
     @include desktop {
@@ -67,7 +59,6 @@
 .form__input {
     font-size: 18px;
     width: 100%;
-    // height: 70px;
     height: 50px;
 
     background: rgba(0, 172, 238, 0.2);
@@ -96,10 +87,8 @@
 
 .form__label {
     position: absolute;
-    // top: 50%;
     top: 60%;
     left: 30px;
-    // transform: translateY(-120%);
     transform: translateY(-160%);
 
     transition: transform var(--anim-trans), color var(--anim-trans);
@@ -116,7 +105,6 @@
     background-color: var(--color-btn);
     border-radius: 10px;
     border-color: transparent;
-    // height: 70px;
     height: 50px;
 
     font-family: "Roboto", sans-serif;
