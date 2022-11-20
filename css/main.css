@@ -478,7 +478,7 @@ html {
 .hero {
   max-width: 1600px;
   height: 364px;
-  background-image: url("../../img/banner-bg-mob.jpg");
+  background-image: url("../img/banner-bg-mob.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -491,18 +491,18 @@ html {
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
-    background-image: url("../../img/banner-bg-mob-2x.jpg");
+    background-image: url("../img/banner-bg-mob-2x.jpg");
   }
 }
 @media screen and (min-width: 768px) {
   .hero {
     margin-bottom: 500px;
-    background-image: url("../../img/banner-bg-2x.jpg");
+    background-image: url("../img/banner-bg-2x.jpg");
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: url("../../img/banner-bg-2x.jpg");
+    background-image: url("../img/banner-bg-2x.jpg");
   }
 }
 @media screen and (min-width: 1200px) {
@@ -510,12 +510,12 @@ html {
     height: 900px;
     flex-wrap: nowrap;
     margin-bottom: 1px;
-    background-image: url("../../img/banner-bg.jpg");
+    background-image: url("../img/banner-bg.jpg");
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: url("../../img/banner-bg-2x.jpg");
+    background-image: url("../img/banner-bg-2x.jpg");
   }
 }
 
