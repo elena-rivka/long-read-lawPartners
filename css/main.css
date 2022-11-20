@@ -387,6 +387,7 @@ html {
   transition: fill var(--anim-trans), border-color var(--anim-trans);
 }
 .modal__close:hover, .modal__close:focus {
+  color: var(--color-btn-hov);
   fill: var(--color-btn-hov);
   border-color: var(--color-btn-hov);
 }

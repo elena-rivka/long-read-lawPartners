@@ -82,6 +82,7 @@
 
         &:hover,
         &:focus {
+            color: var(--color-btn-hov);
             fill: var(--color-btn-hov);
             border-color: var(--color-btn-hov);
         }
