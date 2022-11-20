@@ -374,13 +374,13 @@ html {
 .modal__close {
   width: 30px;
   height: 30px;
-  background-color: var(--color-white);
+  background-color: transparent;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   position: absolute;
   top: 8px;
   right: 8px;
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   fill: #000;
