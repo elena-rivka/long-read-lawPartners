@@ -3,7 +3,7 @@
     // height: 900px;
     height: 364px;
 
-    background-image: url(../../img/banner-bg-mob.jpg);
+    background-image: url('../../img/banner-bg-mob.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -18,22 +18,22 @@
     margin-bottom: 527px;
 
     @include retina {
-        background-image: url(../../img/banner-bg-mob-2x.jpg);
+        background-image: url('../../img/banner-bg-mob-2x.jpg');
     }
     @include tablet {
         margin-bottom: 500px;
-        background-image: url(../../img/banner-bg-2x.jpg);
+        background-image: url('../../img/banner-bg-2x.jpg');
         @include retina {
-            background-image: url(../../img/banner-bg-2x.jpg);
+            background-image: url('../../img/banner-bg-2x.jpg');
         }
     }
     @include desktop {
         height: 900px;
         flex-wrap: nowrap;
         margin-bottom: 1px;
-        background-image: url(../../img/banner-bg.jpg);
+        background-image: url('../../img/banner-bg.jpg');
         @include retina {
-            background-image: url(../../img/banner-bg-2x.jpg);
+            background-image: url('../../img/banner-bg-2x.jpg');
         }
     }
 }
