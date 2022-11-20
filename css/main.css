@@ -13,12 +13,12 @@
 
 @-webkit-keyframes moving {
   0% {
-    top: 80%;
+    top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
   100% {
-    top: 92%;
+    top: 85%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
@@ -26,12 +26,12 @@
 
 @keyframes moving {
   0% {
-    top: 80%;
+    top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
   100% {
-    top: 92%;
+    top: 85%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
@@ -576,6 +576,16 @@ html {
   display: block;
   fill: var(--color-accent);
   position: absolute;
+  -webkit-animation-name: moving;
+          animation-name: moving;
+  -webkit-animation-duration: 1500ms;
+          animation-duration: 1500ms;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
 }
 @media screen and (min-width: 1200px) {
   .hero__arrow {

@@ -112,11 +112,11 @@
     fill: var(--color-accent);
     position: absolute;
 
-    // animation-name: moving;
-    // animation-duration: 1500ms;
-    // animation-timing-function: linear;
-    // animation-iteration-count: infinite;
-    // animation-direction: alternate;
+    animation-name: moving;
+    animation-duration: 1500ms;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 
     @include desktop {
         display: none;
