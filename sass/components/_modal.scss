@@ -21,11 +21,8 @@
     left: 50%;
     transform: translate(-50%, -50%);
 
-    // width: 528px;
-    // height: 600px;
     width: 334px;
     height: 475px;
-    // padding: 40px;
     padding: 20px;
 
     background-color: #fff;
@@ -38,8 +35,8 @@
 
     @include tablet {
         width: 528px;
-            height: 600px;
-            padding: 40px;
+        height: 600px;
+        padding: 40px;
     }
     @include desktop {
         width: 528px;
