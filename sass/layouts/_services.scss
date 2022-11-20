@@ -1,13 +1,57 @@
 .services {
-    padding-top: 74px;
-    padding-bottom: 74px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+
+    @include desktop {
+        padding-top: 74px;
+        padding-bottom: 74px;
+    }
+}
+
+.services__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    @include desktop {
+        display: block;
+    }
 }
 
 .services__bg {
-    background-image: url("../img/bg-servic.jpg");
+    background-image: none;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+
+    @include retina {
+        background-image: none;
+    }
+
+    @include tablet {
+        background-image: url(../../img/bg-servic-tab.jpg);
+        @include retina {
+            background-image: url(../../img/bg-servic-tab-2x.jpg);
+        }
+    }
+
+    @include desktop {
+        background-image: url(../../img/bg-servic.jpg);
+        @include retina {
+            background-image: url(../../img/bg-servic-2x.jpg);
+        }
+    }
+}
+
+.services__block {
+    width: 100%;
+
+    @include tablet {
+        width: 100%;
+    }
+    @include desktop {
+        width: 70%;
+    }
 }
 
 .services__item {
@@ -16,36 +60,66 @@
     border-radius: 20px;
 
     display: flex;
-    gap: 45px;
-    width: 800px;
     padding: 25px 40px;
+
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    gap: 18px;
 
         &:not(:last-child) {
             margin-bottom: 50px;
         }
+        @include tablet {
+            width: 450px;
+        }
+        @include desktop {
+            gap: 45px;
+            width: 800px;
+            flex-wrap: nowrap;
+            align-items: center;
+        }
 }
 
 .services__btn {
-    text-align: right;
+    text-align: center;
+
+    @include tablet {
+        text-align: center;
+    }
+    @include desktop {
+        text-align: right;
+    }
 }
 
 .services__title {
     font-style: normal;
     font-weight: 700;
-    font-size: 26px;
+    font-size: 20px;
     line-height: 1.19;
 
     color: var(--color-title);
 
-    margin-bottom: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+
+    @include desktop {
+        margin-bottom: 30px;
+        font-size: 26px;
+    }
 }
 
 .services__text {
     font-weight: 400;
-    font-size: 20px;
-    line-height: 1.7;
-
     color: var(--color-text);
 
-    margin-bottom: 25px;
+    font-size: 16px;
+    line-height: 1.18;
+    margin-bottom: 18px;
+
+    @include desktop {
+        margin-bottom: 25px;
+        font-size: 20px;
+        line-height: 1.7;
+    }
 }

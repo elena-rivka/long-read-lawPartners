@@ -1,10 +1,25 @@
 .footer {
     background-color: var(--color-bg);
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)),
-        url(../img/footer-bg.jpg);
+    background-image: var(--grad-bg),
+        url(../../img/footer-bg-mob.jpg);
     background-repeat: no-repeat;
     background-position: right;
+
+    @include retina {
+        background-image: var(--grad-bg), url(../../img/footer-bg-mob-2x.jpg);
+    }
+    @include tablet {
+        background-image: var(--grad-bg), url(../../img/footer-bg-tab.jpg);
+        @include retina {
+            background-image: var(--grad-bg), url(../../img/footer-bg-tab-2x.jpg);
+        }
+    }
+    @include desktop {
+        background-image: var(--grad-bg), url(../../img/footer-bg.jpg);
+        @include retina {
+            background-image: var(--grad-bg), url(../../img/footer-bg-2x.jpg);
+        }
+    }
 }
 
 .footer__logo {
@@ -51,9 +66,18 @@
 }
 
 .footer__block {
-    padding-top: 74px;
-    padding-bottom: 74px;
-    width: calc(100% / 3 - 70px);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 100%;
+
+    @include tablet {
+        width: calc(100% / 2 - 70px);
+    }
+    @include desktop {
+        width: calc(100% / 3 - 70px);
+        padding-top: 74px;
+        padding-bottom: 74px;
+    }
 }
 
 .foooter__wrap {

@@ -1,6 +1,11 @@
 .header {
+    display: none;
     padding-top: 29px;
     padding-bottom: 29px;
+
+    @include desktop {
+        display: block;
+    }
 }
 
 .logo {

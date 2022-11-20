@@ -1,41 +1,74 @@
 .hero__form {
-    width: 500px;
-    height: 655px;
+    // width: 500px;
+    // height: 655px;
     background: var(--color-white);
-    box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.25);
+    // box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.25);
+    filter: drop-shadow(1px 1px 20px rgba(106, 106, 106, 0.78));
     border-radius: 10px;
 
-    padding: 50px;
+    // padding: 50px;
+    padding: 20px;
+    margin-top: 30px;
+
+    width: 330px;
+    height: 480px;
+
+    @include tablet {
+        width: 500px;
+        height: 475px;
+    }
+    @include desktop {
+        width: 500px;
+        height: 655px;
+        padding: 50px;
+    }
 }
 
 .form__title {
     font-family: "Roboto";
     font-style: normal;
     font-weight: 700;
-    font-size: 26px;
+    // font-size: 26px;
+    font-size: 20px;
     line-height: 1.19;
     text-align: center;
 
     color: var(--color-btn);
 
-    margin-bottom: 20px;
+    // margin-bottom: 20px;
+    margin-bottom: 15px;
+
+    @include  desktop {
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
 }
 
 .form__sub-title {
     font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
+    // font-weight: 500;
+    // font-size: 20px;
+    font-weight: 400;
+    font-size: 14px;
     line-height: 1.4;
 
     text-align: center;
 
-    margin-bottom: 42px;
+    // margin-bottom: 42px;
+    margin-bottom: 30px;
+
+    @include desktop {
+        font-weight: 500;
+        font-size: 20px;
+        margin-bottom: 42px;
+    }
 }
 
 .form__input {
     font-size: 18px;
     width: 100%;
-    height: 70px;
+    // height: 70px;
+    height: 50px;
 
     background: rgba(0, 172, 238, 0.2);
     border-color: transparent;
@@ -45,6 +78,10 @@
     padding-left: 30px;
     padding-right: 30px;
     margin-bottom: 35px;
+
+    @include desktop {
+        height: 70px;
+    }
 }
 
 .form__input:focus+.form__label,
@@ -59,11 +96,18 @@
 
 .form__label {
     position: absolute;
-    top: 50%;
+    // top: 50%;
+    top: 60%;
     left: 30px;
-    transform: translateY(-120%);
+    // transform: translateY(-120%);
+    transform: translateY(-160%);
 
     transition: transform var(--anim-trans), color var(--anim-trans);
+
+    @include desktop {
+        top: 50%;
+        transform: translateY(-120%);
+    }
 }
 
 .form__button {
@@ -72,7 +116,8 @@
     background-color: var(--color-btn);
     border-radius: 10px;
     border-color: transparent;
-    height: 70px;
+    // height: 70px;
+    height: 50px;
 
     font-family: "Roboto", sans-serif;
     font-weight: 700;
@@ -90,6 +135,10 @@
         &:focus {
             background-color: var(--color-btn-hov);
         }
+
+        @include desktop {
+            height: 70px;
+        }
 }
 
 .pivacy-policy {
@@ -99,8 +148,21 @@
     justify-content: center;
 
     color: var(--color-title);
+    font-size: 9px;
+    line-height: 1.14;
+
+    @include desktop {
+        font-size: 14px;
+    }
 }
 
 .pivacy-policy__link {
     color: var(--color-accent);
+
+    font-size: 9px;
+    line-height: 1.14;
+
+    @include desktop {
+        font-size: 14px;
+    }
 }

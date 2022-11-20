@@ -21,9 +21,12 @@
     left: 50%;
     transform: translate(-50%, -50%);
 
-    width: 528px;
-    height: 600px;
-    padding: 40px;
+    // width: 528px;
+    // height: 600px;
+    width: 334px;
+    height: 506px;
+    // padding: 40px;
+    padding: 20px;
 
     background-color: #fff;
     border-radius: 4px;
@@ -32,6 +35,12 @@
 
     transform: translate(-50%, -50%) scale(1);
     transition: transform var(--anim-trans);
+
+    @include desktop {
+        width: 528px;
+        height: 600px;
+        padding: 40px;
+    }
 }
 
 .backdrop.is-hidden .modal {
@@ -39,7 +48,12 @@
 }
 
 .modal-coment {
-    height: 722px;
+    height: 512px;
+    overflow: auto;
+
+    @include desktop {
+        height: 700px;
+    }
 }
 
 .modal__close {
@@ -70,7 +84,14 @@
 }
 
 .modal__input {
-    height: 60px;
+    height: 50px;
+
+    @include tablet {
+        height: 60px;
+    }
+    @include desktop {
+        height: 60px;
+    }
 }
 
 .form__input--textarea {
