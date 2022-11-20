@@ -379,11 +379,6 @@ html {
   border-color: var(--color-btn-hov);
 }
 
-.modal__icon {
-  width: 18px;
-  height: 18px;
-}
-
 .modal__input {
   height: 50px;
 }
@@ -581,16 +576,6 @@ html {
   display: block;
   fill: var(--color-accent);
   position: absolute;
-  -webkit-animation-name: moving;
-          animation-name: moving;
-  -webkit-animation-duration: 1500ms;
-          animation-duration: 1500ms;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-direction: alternate;
-          animation-direction: alternate;
 }
 @media screen and (min-width: 1200px) {
   .hero__arrow {
