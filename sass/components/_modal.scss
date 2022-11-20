@@ -36,6 +36,11 @@
     transform: translate(-50%, -50%) scale(1);
     transition: transform var(--anim-trans);
 
+    @include tablet {
+        width: 528px;
+            height: 600px;
+            padding: 40px;
+    }
     @include desktop {
         width: 528px;
         height: 600px;
@@ -50,6 +55,10 @@
 .modal-coment {
     height: 600px;
     overflow: auto;
+
+    @include tablet {
+        height: 700px;
+    }
 
     @include desktop {
         height: 700px;
@@ -77,11 +86,6 @@
             border-color: var(--color-btn-hov);
         }
 }
-
-// .modal__icon {
-//     width: 18px;
-//     height: 18px;
-// }
 
 .modal__input {
     height: 50px;

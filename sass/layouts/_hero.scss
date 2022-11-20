@@ -118,6 +118,9 @@
     animation-iteration-count: infinite;
     animation-direction: alternate;
 
+    @include tablet {
+        display: none;
+    }
     @include desktop {
         display: none;
     }
