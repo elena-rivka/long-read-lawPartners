@@ -1,0 +1,86 @@
+.thanks {
+    padding-top: 35px;
+    text-align: center;
+    background-image: url('../../img/thank-you/bg-thank-mob.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    @include retina {
+        background-image: url('../../img/thank-you/bg-thank-mob-2x.png');
+    }
+
+    @include tablet {
+        padding-top: 74px;
+        background-image: url('../../img/thank-you/bg-thank.jpg');
+        
+            @include retina {
+                background-image: url('../../img/thank-you/bg-thank-2x.jpg');
+            }
+    }
+
+    @include desktop {
+        padding-top: 74px;
+        background-image: url('../../img/thank-you/bg-thank.jpg');
+
+        @include retina {
+            background-image: url('../../img/thank-you/bg-thank-2x.jpg');
+        }
+    }
+}
+
+.thanks__sub-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.14;
+    color: var(--color-title);
+
+    margin-bottom: 23px;
+
+    @include desktop {
+        font-size: 20px;
+        line-height: 1.17;
+    }
+}
+
+.thanks__text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.14;
+    color: var(--color-title);
+
+    margin-bottom: 20px;
+
+    @include desktop {
+        font-size: 20px;
+        line-height: 1.17;
+        margin-bottom: 38px;
+    }
+}
+
+.thanks__succes {
+    margin: 0 auto;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 38px;
+
+    @include desktop {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+.thanks-img {
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+
+    @include tablet {
+        width: 436px;
+        height: 361px;
+    }
+
+    @include desktop {
+        width: 436px;
+        height: 361px;
+    }
+}

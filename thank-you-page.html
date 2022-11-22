@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thank you</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <main>
+      <section class="thanks">
+        <div class="container">
+          <h1 class="section-title">Спасибо!</h1>
+          <p class="thanks__sub-title">Ваша заявка принята!</p>
+          <p class="thanks__text">Мы свяжемся с вами в ближайшее время.</p>
+          <picture>
+            <source
+              srcset="
+                ./img/thank-you/success.png    1x,
+                ./img/thank-you/success-2x.png 2x
+              "
+              media="(min-width: 1236px)" />
+            <source
+              srcset="
+                ./img/thank-you/success.png    1x,
+                ./img/thank-you/success-2x.png 2x
+              "
+              media="(min-width: 768px)" />
+            <source
+              srcset="
+                ./img/thank-you/success-mob.png    1x,
+                ./img/thank-you/success-mob-2x.png 2x
+              "
+              media="(min-width: 320px)" />
+            <img
+              src="./img/thank-you/success.png"
+              alt="success"
+              class="thanks__succes"
+              width="120"
+              height="120"
+          /></picture>
+          <picture>
+            <source
+              srcset="./img/thank-you/man.png 1x, ./img/thank-you/man-2x.png 2x"
+              media="(min-width: 1236px)"
+            />
+            <source
+              srcset="./img/thank-you/man.png 1x, ./img/thank-you/man-2x.png 2x"
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="
+                ./img/thank-you/man-mob.png    1x,
+                ./img/thank-you/man-mob-2x.png 2x
+              "
+              media="(min-width: 320px)"
+            />
+            <img
+              src="./img/thank-you/man.png"
+              alt="man"
+              class="thanks-img"
+              width="468"
+              height="387"
+            />
+          </picture>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
