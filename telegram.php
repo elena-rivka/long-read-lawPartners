@@ -23,3 +23,4 @@ if ($sendToTelegram) {
     echo "Error";
 }
 ?>
+

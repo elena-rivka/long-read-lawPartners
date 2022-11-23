@@ -1,29 +1,29 @@
 .thanks {
     padding-top: 35px;
     text-align: center;
-    background-image: url('../../img/thank-you/bg-thank-mob.png');
+    background-image: url('../img/thank-you/bg-thank-mob.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     @include retina {
-        background-image: url('../../img/thank-you/bg-thank-mob-2x.png');
+        background-image: url('../img/thank-you/bg-thank-mob-2x.png');
     }
 
     @include tablet {
         padding-top: 74px;
-        background-image: url('../../img/thank-you/bg-thank.jpg');
+        background-image: url('../img/thank-you/bg-thank.jpg');
         
             @include retina {
-                background-image: url('../../img/thank-you/bg-thank-2x.jpg');
+                background-image: url('../img/thank-you/bg-thank-2x.jpg');
             }
     }
 
     @include desktop {
         padding-top: 74px;
-        background-image: url('../../img/thank-you/bg-thank.jpg');
+        background-image: url('../img/thank-you/bg-thank.jpg');
 
         @include retina {
-            background-image: url('../../img/thank-you/bg-thank-2x.jpg');
+            background-image: url('../img/thank-you/bg-thank-2x.jpg');
         }
     }
 }
