@@ -2,12 +2,15 @@
 $name = $_POST['user-name'];
 $phone = $_POST['user-tel'];
 $email = $_POST['user-email'];
+$pixel = $_GET['pixel'];
+$pixel = $_COOKIE['pixel'];
 $token = "5844014807:AAEaN06rGJnplcucnOT3fh9fmuSNDUHKTnE";
 $chat_id = "-819029989";
 $arr = array(
     'Имя пользователя: ' => $name,
     'Телефон: ' => $phone,
-    'Email' => $email
+    'Email: ' => $email,
+    'Pixel: ' => $pixel
 );
 
 foreach($arr as $key => $value) {

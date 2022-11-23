@@ -136,18 +136,18 @@ html {
   padding: 20px;
   margin-top: 30px;
   width: 330px;
-  height: 480px;
+  height: 555px;
 }
 @media screen and (min-width: 768px) {
   .hero__form {
     width: 500px;
-    height: 475px;
+    height: 548px;
   }
 }
 @media screen and (min-width: 1200px) {
   .hero__form {
     width: 500px;
-    height: 655px;
+    height: 729px;
     padding: 50px;
   }
 }
@@ -270,6 +270,11 @@ html {
   font-size: 9px;
   line-height: 1.14;
 }
+@media screen and (min-width: 768px) {
+  .pivacy-policy {
+    font-size: 12px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .pivacy-policy {
     font-size: 14px;
@@ -281,10 +286,37 @@ html {
   font-size: 9px;
   line-height: 1.14;
 }
+@media screen and (min-width: 768px) {
+  .pivacy-policy__link {
+    font-size: 12px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .pivacy-policy__link {
     font-size: 14px;
   }
+}
+
+.rap {
+  position: relative;
+}
+
+.form__wrap {
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  transform: translateY(-50%);
+  border: none;
+  background-color: transparent;
+  color: var(--color-text);
+  outline: transparent;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.03em;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  width: calc(100% - 40px);
+  height: 50px;
 }
 
 .button {
@@ -498,7 +530,7 @@ html {
   align-items: center;
   justify-content: space-around;
   flex-wrap: wrap;
-  margin-bottom: 527px;
+  margin-bottom: 583px;
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
@@ -507,7 +539,7 @@ html {
 }
 @media screen and (min-width: 768px) {
   .hero {
-    margin-bottom: 500px;
+    margin-bottom: 586px;
     background-image: url("../img/banner-bg-2x.jpg");
   }
 }

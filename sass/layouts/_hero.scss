@@ -14,13 +14,13 @@
     justify-content: space-around;
 
     flex-wrap: wrap;
-    margin-bottom: 527px;
+    margin-bottom: 583px;
 
     @include retina {
         background-image: url('../img/banner-bg-mob-2x.jpg');
     }
     @include tablet {
-        margin-bottom: 500px;
+        margin-bottom: 586px;
         background-image: url('../img/banner-bg-2x.jpg');
         @include retina {
             background-image: url('../img/banner-bg-2x.jpg');
