@@ -140,15 +140,17 @@ html {
 }
 @media screen and (min-width: 768px) {
   .hero__form {
+    margin-top: 30px;
     width: 500px;
     height: 548px;
   }
 }
 @media screen and (min-width: 1200px) {
   .hero__form {
+    margin-top: 0;
     width: 500px;
-    height: 729px;
-    padding: 50px;
+    height: 670px;
+    padding: 30px 40px;
   }
 }
 
@@ -199,7 +201,7 @@ html {
 }
 @media screen and (min-width: 1200px) {
   .form__input {
-    height: 70px;
+    height: 60px;
   }
 }
 
@@ -299,6 +301,17 @@ html {
 
 .rap {
   position: relative;
+  height: 50px;
+}
+@media screen and (min-width: 768px) {
+  .rap {
+    height: 50px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .rap {
+    height: 60px;
+  }
 }
 
 .form__wrap {
@@ -362,6 +375,7 @@ html {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  overflow: auto;
   width: 334px;
   height: 475px;
   padding: 20px;
@@ -381,7 +395,7 @@ html {
 @media screen and (min-width: 1200px) {
   .modal {
     width: 528px;
-    height: 600px;
+    height: 666px;
     padding: 40px;
   }
 }

@@ -11,13 +11,15 @@
     height: 555px;
 
     @include tablet {
+        margin-top: 30px;
         width: 500px;
         height: 548px;
     }
     @include desktop {
+        margin-top: 0;
         width: 500px;
-        height: 729px;
-        padding: 50px;
+        height: 670px;
+        padding: 30px 40px;
     }
 }
 
@@ -71,7 +73,7 @@
     margin-bottom: 35px;
 
     @include desktop {
-        height: 70px;
+        height: 60px;
     }
 }
 
@@ -165,6 +167,15 @@
 
 .rap {
     position: relative;
+    height: 50px;
+
+    @include tablet {
+        height: 50px;
+    }
+
+    @include desktop {
+        height: 60px;
+    }
 }
 
 .form__wrap {

@@ -20,6 +20,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    overflow: auto;
 
     width: 334px;
     height: 475px;
@@ -40,7 +41,7 @@
     }
     @include desktop {
         width: 528px;
-        height: 600px;
+        height: 666px;
         padding: 40px;
     }
 }

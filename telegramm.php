@@ -2,6 +2,7 @@
 $name = $_POST['user-name'];
 $phone = $_POST['user-tel'];
 $email = $_POST['user-email'];
+$text = $_POST['user-comment'];
 $pixel = $_GET['pixel'];
 $pixel = $_COOKIE['pixel'];
 $token = "5844014807:AAEaN06rGJnplcucnOT3fh9fmuSNDUHKTnE";
@@ -10,6 +11,7 @@ $arr = array(
     'Имя пользователя: ' => $name,
     'Телефон: ' => $phone,
     'Email: ' => $email,
+    'Комментарий' => $text,
     'Pixel: ' => $pixel
 );
 
@@ -19,6 +21,7 @@ foreach($arr as $key => $value) {
 
 $sendToTelegram = fopen("https://api.telegram.org/bot{$token}/sendMessage?chat_id={$chat_id}
 &parse_mode=html&text={$txt}","r");
+
 
 if ($sendToTelegram) {
     header('Location: thank-you.html');

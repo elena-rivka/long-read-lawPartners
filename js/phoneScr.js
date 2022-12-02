@@ -1,52 +1,87 @@
 var maskMap = {
-        1: "+43(999) 999-99999",
-        2: "+355(999) 999-999",
-        3: "+376 999-999",
-        4: "+32(999) 999-999",
-        5: "+359(999) 999-999",
-        6: "+387 99-999-999",
-        7: "+44 99-9999-99999",
-        8: "+36(999) 999-999",
-        9: "+49(999) 999-99999",
-        10: "+30(999) 999-9999",
-        11: "+45 99-99-99-99",
-        12: "+353(999) 999-999",
-        13: "+354 999-9999",
-        14: "+34(999) 999-999",
-        15: "+39(999) 9999-999",
-        16: "+371 99-999-999",
-        17: "+370(999) 99-999",
-        18: "+423 999-99-99",
-        19: "+352(999) 999-999",
-        20: "+356 9999-9999",
-        21: "+373 9999-9999",
-        22: "+377 99-999-999",
-        23: "+31 99-999-9999",
-        24: "+47(999) 99-999",
-        25: "+357 99-999-999",
-        26: "+48(999) 999-999",
-        27: "+351 99-999-9999",
-        28: "+40 99-999-9999",
-        29: "+389 99-999-999",
-        30: "+381 99-999-9999",
-        31: "+421(999) 999-999",
-        32: "+386 99-999-999",
-        33: "+358 999-9999999",
-        34: "+33(999) 999-9999",
-        35: "+385 99-999-9999",
-        36: "+382 99-999-999",
-        37: "+420(999) 999-999",
-        38: "+41 99-999-9999",
-        39: "+46 99-999-9999",
-        40: "+372 9999-9999",
-        41: "+972 999-999-9999",
-        42: "+995(999) 999-999",
-        43: "+90(999) 999-99999"
+        1: "+43(nnn) nnn-nnnnn",
+        2: "+355(nnn) nnn-nnn",
+        3: "+376 nnn-nnn",
+        4: "+32(nnn) nnn-nnn",
+        5: "+359(nnn) nnn-nnn",
+        6: "+387 nn-nnn-nnn",
+        7: "+44 nn-nnnn-nnnnn",
+        8: "+36(nnn) nnn-nnn",
+        9: "+49(nnn) nnn-nnnnn",
+        10: "+30(nnn) nnn-nnnn",
+        11: "+45 nn-nn-nn-nn",
+        12: "+353(nnn) nnn-nnn",
+        13: "+354 nnn-nnnn",
+        14: "+34(nnn) nnn-nnn",
+        15: "+39(nnn) nnnn-nnn",
+        16: "+371 nn-nnn-nnn",
+        17: "+370(nnn) nn-nnn",
+        18: "+423 nnn-nn-nn",
+        19: "+352(nnn) nnn-nnn",
+        20: "+356 nnnn-nnnn",
+        21: "+373 nnnn-nnnn",
+        22: "+377 nn-nnn-nnn",
+        23: "+31 nn-nnn-nnnn",
+        24: "+47(nnn) nn-nnn",
+        25: "+357 nn-nnn-nnn",
+        26: "+48(nnn) nnn-nnn",
+        27: "+351 nn-nnn-nnnn",
+        28: "+40 nn-nnn-nnnn",
+        29: "+389 nn-nnn-nnn",
+        30: "+381 nn-nnn-nnnn",
+        31: "+421(nnn) nnn-nnn",
+        32: "+386 nn-nnn-nnn",
+        33: "+358 nnn-nnnnnnn",
+        34: "+33(nnn) nnn-nnnn",
+        35: "+385 nn-nnn-nnnn",
+        36: "+382 nn-nnn-nnn",
+        37: "+420(nnn) nnn-nnn",
+        38: "+41 nn-nnn-nnnn",
+        39: "+46 nn-nnn-nnnn",
+        40: "+372 nnnn-nnnn",
+        41: "+972 nnn-nnn-nnnn",
+        42: "+995(nnn) nnn-nnn",
+        43: "+90(nnn) nnn-nnnnn"
       };
-      $("#user-tel").mask("+7(999) 999-9999");
-
+      
       $("select").change(function () {
         var phoneMask = maskMap[this.value];
         $("#user-tel").mask(phoneMask);
         $("#user-tel").val("").focus();
+      });
+
+      $("select").change(function () {
+        var phoneMask = maskMap[this.value];
+        $("#forex-tel").mask(phoneMask);
+        $("#forex-tel").val("").focus();
+      });
+
+      $("select").change(function () {
+        var phoneMask = maskMap[this.value];
+        $("#any-tel").mask(phoneMask);
+        $("#any-tel").val("").focus();
+      });
+
+      $("select").change(function () {
+        var phoneMask = maskMap[this.value];
+        $("#bit-tel").mask(phoneMask);
+        $("#bit-tel").val("").focus();
+      });
+
+      $("select").change(function () {
+        var phoneMask = maskMap[this.value];
+        $("#victoria-tel").mask(phoneMask);
+        $("#victoria-tel").val("").focus();
+      });
+
+      $("select").change(function () {
+        var phoneMask = maskMap[this.value];
+        $("#oskars-tel").mask(phoneMask);
+        $("#oskars-tel").val("").focus();
+      });
+
+      $("select").change(function () {
+        var phoneMask = maskMap[this.value];
+        $("#kazimir-tel").mask(phoneMask);
+        $("#kazimir-tel").val("").focus();
       });
